@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            // membuat array dengan 10 angka acak
+            let angkaAcak = [45,76,12,33,76,23,11,10];
+            let genap = []
+            let ganjil = []
+            function pisahAngka() {
+                for (let i = 0; i < angkaAcak.length; i++) {
+                    if (angkaAcak[i] % 2 === 0) {
+                        genap.push(angkaAcak[i])
+                    } else {
+                        ganjil.push(angkaAcak[i])
+                    }
+                }
+            }
+
+            pisahAngka()
+
+            // menampilkan hasilnya pada console.log
+            console.log(`Array ${angkaAcak} setelah dilakukan pemisahan menjadi ${genap} dan ${ganjil}`)
+
+        </script>  
+    </body>
+</html>
